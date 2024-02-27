@@ -9,6 +9,8 @@
             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
             crossorigin="anonymous"
         />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://kit.fontawesome.com/e6a4cb6747.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -331,9 +333,66 @@
             cursor: pointer;
             }
 
-         .end{
+         footer{
                 text-align:center;
             }
+
+            .below{
+                margin-top: 90px;
+                
+            }
+
+
+            .container-carousel {
+            margin-top: 100px;
+            min-width: 900px;
+        }
+
+
+                .sliding {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 20px;
+                    position: relative;
+                    align-items: center;
+                }
+
+                .sliding img {
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 20px;
+                    filter: grayscale(100%);
+                
+                }
+
+                .sliding img:hover {
+                    filter: grayscale(0%);
+                    border-radius: 20px;
+                }
+
+                                footer {
+                background-color: pink;
+                padding: 80px 100px;
+                }
+
+                .more-about-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 60px;
+                }
+
+                    .pfp {
+                    border-radius: 50%;
+                    width: 350px;
+                    }
+
+
+                    .about-myself{
+                        font-family:'Times New Roman', Times, serif;
+                        margin-left:20px;
+                    }
             </style>
 
         </head>
@@ -343,7 +402,7 @@
                     <li><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sandro-logo.jpg/440px-Sandro-logo.jpg" alt="trendy brand logo" class="logo">
                         </a></li>
                     <li><a href="#about" class="link">About</a></li>
-                    <li><a href="#gallery" class="link">Art Gallery</a></li>
+                    <li><a href="#gallery" class="link">Gallery</a></li>
                     <li><button class="contact-button" onclick="window.location.href='#footer';">Contact</button></li>
                 </ul>
             </nav>
@@ -378,9 +437,7 @@
                             <div class="header-container">
                                 <h2>Sandro Paris</h2>
                             </div>
-                
-                            <br>
-                            <br>
+
 
                 
                                 <div class="sandro-display">
@@ -452,65 +509,163 @@
                     </div>
 
 
-
-                    <br>
-                    <br>
-
-                    <div class="container-carousel">
+                    <div class="container-carousel" id="gallery">
                         <marquee direction="left" scrollamount="3" behavior="alternate">
-                          <div class="slider">
+                          <div class="sliding">
                             <div class="box1">
                               <img
-                                src="https://uk.sandro-paris.com/on/demandware.static/-/Library-Sites-Sandro-Shared/default/dwd521885f/kr_sandro_campagne_FW19_femme/3_desktop.jpg"
+                                src="https://uk.sandro-paris.com/on/demandware.static/-/Library-Sites-Sandro-Shared/default/dwdcb49019/kr_sandro_campagne_FW19_femme/8_desktop.jpg"
                               />
                             </div>
                             <div class="box2">
                               <img
-                                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/968/original/chandler_2.gif?1707676686"
+                                src="https://us.sandro-paris.com/on/demandware.static/-/Library-Sites-Sandro-NA-Shared/default/dw69a0d73d/LP/kr_sandro_lp_ss21_campagne/WOMAN/shop-item-3.jpg"
                               />
                             </div>
                             <div class="box3">
                               <img
-                                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/074/original/How_you_doing.gif?1707738700"
+                                src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw618caa67/images/h13/Sandro_SHPCM01004-A326_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
                               />
                             </div>
                             <div class="box4">
                               <img
-                                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/072/original/brake.gif?1707738297"
+                                src="https://ch.sandro-paris.com/on/demandware.static/-/Library-Sites-Sandro-Shared/default/dwc1206661/kr_sandro_ss20_f/img5.jpg"
                               />
                             </div>
                             <div class="box5">
                               <img
-                                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/073/original/lobster.gif?1707738563"
-                              />
+                                src="https://ch.sandro-paris.com/on/demandware.static/-/Sites/default/dw17364793/HP_Sandro/2023/SLIDER_mob_SS24_H.jpg"
+                              img> 
                             </div>
-                    <br> <br>
+                            <div class="box6">
+                                <img
+                                  src="https://uk.sandro-paris.com/on/demandware.static/-/Library-Sites-Sandro-Shared/default/dwa7dbcc5a/Campagne_ss19/image_8.jpg"
+                                img> 
+                              </div>
+                              <div class="box7">
+                                <img
+                                  src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw26a4e6a2/images/h13/Sandro_SFPRO03345-B198_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
+                              <div class="box8">
+                                <img
+                                  src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dwb58653b7/images/h13/Sandro_SFPJU01120-802_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
+                              <div class="box9">
+                                <img
+                                  src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw1dd8da1e/images/h13/Sandro_SFPJU01020-24_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
+                              <div class="box10">
+                                <img
+                                  src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw6edfa5e1/images/h13/Sandro_SFPSH00379-D234_V_3.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
+                              <div class="box11">
+                                <img
+                                  src="data:image/jpeg;base64,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"
+                                img> 
+                              </div>
+                              <div class="box12">
+                                <img
+                                  src="https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw1337cd75/images/h13/Sandro_SHPSW00458-D312_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
+                              <div class="box13">
+                                <img
+                                  src="  https://ch.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-sandro-catalog-master-H13/default/dw49b355ee/images/h13/Sandro_SFPRO03333-20_V_4.jpg?sw=1156&cx=221&cy=0&cw=1547&ch=2000"
+                                img> 
+                              </div>
 
-                    <footer class="end">
+                        </div>
+                    </div>
+                </marquee>
+
+         <br>
+         <br>
+
+                      <footer id="footer">
+                        <div class="more-about-content">
+                            <div class="profile-picture">
+                                <img src="https://eugenia-brunetti-ehnimb.netlify.app/images/picture.png"   class ="pfp"title="eugenia brunetti ehnimb">
+                            </div>
+                            <div class="more-about-container">
+                                <p class="more-about-head"><i class="fa-solid fa-pencil"></i> <em> More about myself 🌸 </em></p>
+                                <br>
+                                <div class="more-text-container">
+                                    <p class="about-myself">
+                                        <em>
+                                        Hello! My name is Eugenia and I am an aspiring front-end developer! I am originally from Argentina, based in Zürich, Switzerland. I'm a former flight attendant craving for a career change. After travelling the world for 5 years, I've decided to ground myself and let my creativity flow. Coding has been an amazing experience so far and I would love create a  future career and to continue along with the skills I've so far learned. I hope you enjoyed this site as much as I did while creating it. Happy Coding! 💃🏻</em>
+                                  
+                                </p>
+                              
+                            </div>
+                        </div>
+                        </div>
+                        <a
+                        href="https://www.linkedin.com/in/eugenia-b-115166223/"
+                        target="_blank"
+                        class="text-decoration-none"
+                        title="LinkedIn - Eugenia Brunetti"
+                      >
+                        <i class="fa-brands fa-linkedin m-5 d-none d-lg-inline"></i
+                      ></a>
+                       <a
+                        href="mailto:eugeniabrunetti.ehnimb@outlook.com"
+                        class="text-decoration-none"
+                        title="Email Eugenia Brunetti"
+                        >  <i class="fa-regular fa-envelope m-5 d-none d-lg-inline"> </i
+                      > </a> Feel free to contact me!
+                      <a
+                      href="https://www.instagram.com/euge.suri/"
+                      target="_blank"
+                      class="text-decoration-none"
+                      title="Instagram - Eugenia Brunetti"
+                    >
+                      <i class="fa-brands fa-instagram m-5 d-none d-lg-inline"></i
+                    ></a>
+                    <a
+            href="https://github.com/eugesuri"
+            target="_blank"
+            class="text-decoration-none"
+            title="Github - Eugenia Brunetti">
+            <i class="fa-brands fa-github m-5 d-none d-lg-inline"></i
+          ></a>
+
+
+          <br>
+
+                        <div class="below">
+                        <footer>
                         
-                          This project was coded by
-                          <a  class=" linked-in"href="https://www.linkedin.com/in/eugenia-b-115166223/" target="_blank"
-                            >Eugenia Brunetti Ehnimb</a
-                          >
-                          and is on
-                          <a class="github"
-                            href="https://github.com/eugesuri/clothing-brand-trendy"
-                            target="_blank"
-                          >
-                             GitHub</a
-                          >
-                          and hosted on
-                          <a class="netlify" href="https://app.netlify.com/sites/sandro-paris-trendy-brand/overview" target="_blank"
-                            >Netlify</a
-                          >
-                        
-                      </footer>
-                  
+                            This project was coded by
+                            <a  class=" linked-in"href="https://www.linkedin.com/in/eugenia-b-115166223/" target="_blank"
+                              >Eugenia Brunetti Ehnimb</a
+                            >
+                            and is on
+                            <a class="github"
+                              href="https://github.com/eugesuri/clothing-brand-trendy"
+                              target="_blank"
+                            >
+                               GitHub</a
+                            >
+                            and hosted on
+                            <a class="netlify" href="https://app.netlify.com/sites/sandro-paris-trendy-brand/overview" target="_blank"
+                              >Netlify 👩🏻‍💻</a 
+                            >
+                          
+                        </footer>
+                        </div>
         </body>
         <script>
             const container = document.querySelector('.container');
         document.querySelector('.slider').addEventListener('input', (e) => {
         container.style.setProperty('--position', `${e.target.value}%`);
         })
+
+
+
+    
         </script>
         </html>
