@@ -28,15 +28,15 @@
         }
 
         .sub {
-        font-family: sans-serif;
+       
         text-align: center;
-        color: #343f52;
+        color: black;
         line-height: 1.5;
         margin-bottom: 50px;
         }
 
         .sub-top {
-        font-family: sans-serif;
+        
         text-align: center;
         color: #343f52;
         line-height: 1.5;
@@ -57,15 +57,17 @@
         }
 
         li {
-        font-family: sans-serif;
+  
         display: inline-block;
         margin: 0 14px;
         vertical-align: middle;
         }
 
         .logo {
-        height: 75px;
+        height: 55px;
         margin-right: 22px;
+        border-radius: 35px;
+        
         }
 
         a:link,
@@ -73,10 +75,15 @@
         a:hover,
         a:active {
         text-decoration: none;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align:center;
+        display: block;
+        color:black;
         }
 
         .link {
-        color: #383680;
+        color: black;
         }
 
         a:hover {
@@ -117,6 +124,7 @@
         .slider-image {
         display: block;
         max-width: 100%;
+        margin: 0 auto;
         }
 
         main {
@@ -155,7 +163,6 @@
         inset: 0;
         cursor: pointer;
         opacity: 0;
-        /* for Firefox */
         width: 100%;
         height: 100%;
         }
@@ -168,10 +175,9 @@
         .slider-line {
         position: absolute;
         inset: 0;
-        width: 0.2rem;
+        width: 0.4rem;
         height: 100%;
         background-color: #fff;
-        /* z-index: 10; */
         left: var(--position);
         transform: translateX(-50%);
         pointer-events: none;
@@ -179,8 +185,8 @@
 
         .slider-button {
         position: absolute;
-        background-color: #fff;
-        color: black;
+        background-color: white;
+        color: purple;
         padding: 0.5rem;
         border-radius: 100vw;
         display: grid;
@@ -189,7 +195,6 @@
         left: var(--position);
         transform: translate(-50%, -50%);
         pointer-events: none;
-        /* z-index: 100; */
         box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
         }
         .main-container {
@@ -232,8 +237,8 @@
         }
 
         span.gradient {
-        font-style: italic;
-        font-family: "IBM Plex Serif", serif;
+        
+      
         padding-right: 0.2em;
         margin-right: -0.2em;
         }
@@ -247,6 +252,86 @@
         }
 
 
+        .description{
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 15px;
+        }
+
+        h2 {
+        color: #343f52;
+        font-family: fantasy;
+        font-size: 48px;
+        text-align: center;
+        }
+
+        .sandro-pic {
+        width: 300px;
+        transition: transform 0.2s;
+        border-radius: 30px;
+        }
+
+        .sandro-pic:hover {
+        transform: scale(1.5);
+        }
+        
+
+       
+
+            .default-padding {
+            padding: 50px 0;
+            }
+
+            .sandro-text{
+            font-family: fantasy;
+            color: purple;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.5;
+            }
+
+            .row-1,
+            .row-2,
+            .row-3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+            .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 10px;
+            border-radius: 8px;
+            }
+
+            button {
+            color: white;
+            background-color: #605dba;
+            border: none;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 1em;
+            padding: 14px 22px;
+            margin: 0 auto;
+            display: block;
+            }
+
+            button:hover {
+            cursor: pointer;
+            background-color: #383680;
+            transition: all 100ms ease-in-out;
+            }
+
+            .contact-button {
+            margin-left: 22px;
+            }
+
+            .contact-button:hover {
+            cursor: pointer;
+            }
             </style>
 
         </head>
@@ -265,10 +350,10 @@
             <br> <br> <br> <br> <br> <br> 
 
             
-            <div class="container before-after" style="--position: 38%;">
+            <div class="container before-after" style="--position: 0%;">
                 <div class="image-container">
-                    <img class="image-before slider-image" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94c65d70592529.5ba8f8cc935f8.jpg" alt="rendered photo">
-                    <img class="image-after slider-image" src="https://i.pinimg.com/originals/e9/85/68/e985681b3d767063b95cb95d30507174.jpg" alt="unrendered photo">
+                    <img class="image-before slider-image" src="https://i.mdel.net/i/db/2023/2/1871709/1871709-800w.jpg" alt="rendered photo" title="sandro picture">
+                    <img class="image-after slider-image" src="https://i.pinimg.com/originals/e9/85/68/e985681b3d767063b95cb95d30507174.jpg" alt="unrendered photo" title="sandro picture">
                 </div>
                 <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider">
                         <div class="slider-line" aria-hidden="true"></div>
@@ -276,6 +361,114 @@
                             <i class="fa-solid fa-left-right" aria-hidden="true"></i>
                         </div>
                     </div>
+
+
+
+
+                    <br> <br> <br> <br> <br> <br> 
+
+
+
+
+                    <div class="about-container white-container" id="about">
+                        <div class="about-content">
+                
+                            <div class="header-container">
+                                <h2>Sandro Paris</h2>
+                            </div>
+                
+                            <br>
+                            <br>
+
+                
+                                <div class="sandro-display">
+                                    <div class="row-1">
+                                        <div class="card">
+                                            <div class="sandro-container">
+                                                <img src="https://2.bp.blogspot.com/-pH-EPQ3FUpA/XTx5W8xcN0I/AAAAAAAG1WU/naj5pV2kqmUH5wmcwmR4Ix5SGvWr88-cQCLcBGAs/s2000/sandro-paris-mens-spring-summer-2020-collection-21.jpg" class="sandro-pic" title="sandro picture" >
+                                            </div>
+                                            <div class="art-text">
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="sandro-container">
+                                                <img src="https://fashionjournal.com.au/wp-content/uploads/2019/03/sandro-paris-1.jpg" class="sandro-pic" alt="">
+                                            </div>
+                                            <div class="sandro-text">
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="sandro-container">
+                                                <img src="https://natalieoffduty.com/wp-content/uploads/2020/11/sandro-paris-giveaway-natalie-lim-suarez-3.jpg" class="sandro-pic" alt="">
+                                            </div>
+                                            <div class="sandro-text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                   
+
+
+
+                                <br>
+
+                                <div class="description">
+                                    <p>
+                                        Sandro was founded by Évelyne Chetrite with the help of her husband in 1984 as a premium contemporary brand positioned between luxury designer brands and mass market brands. Évelyne Chetrite has described the philosophy of the brand as "casual but always chic" and "sophisticated but cool."
+
+                                        It began as a womenswear brand before Ilan Chetrite, the son of founder Évelyne Chetrite, joined the company and launched Sandro Homme in 2008.
+                                        
+                                        Sandro Homme's design was described by Wmagazine as "masculine but not at all macho" and "timeless but with a bit of edge."
+                                        
+                                        
+                                    </p>
+                                    <p>
+                                        Sandro's business model was exclusively wholesale until 2007 when it began opening stand-alone retail stores in Europe. The first Sandro boutique in the U.S. opened in 2011 in New York City. In 2023, the Sandro is distributed in over 50 outlets in the United States.
+                                        
+                                        Isabelle Allouch, a former Balenciaga executive before joining SMCP Group, was named CEO in 2019.
+                                        
+                                        In 2021, Sandro launched its second-hand offer in France and later in other European countries like Germany, the Netherlands and Spain.
+                                        
+                                        In December 2023, Sandro expanded its presence in the American market with the opening of a new store at the Westfield Topanga Shopping Center in Los Angeles.
+                                    </p>
+
+                                    <p>  <em> “Sandro has a real soul, and I think that’s why we have continued to be successful. We are not a clothes factory. There is a lot of art to what we do, and so much passion. It’s not just about getting the clothes out the door. It’s about dressing people well. We really do believe in that.” </em></p>
+                                    <div> <a href="https://www.afr.com/life-and-luxury/fashion-and-style/the-woman-who-has-defined-french-chic-for-nearly-40-years-20230623-p5dix6-" target="_blank">-Évelyne Chetrite  </a></div>
+
+                                    <br>
+                                    <br>
+
+
+                                    <form action="https://ch.sandro-paris.com/en/sandro-rse/sandro-for-the-future.html" method="get" target="_blank">
+                                        <button>Learn More</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <p>
+                          This project was coded by
+                          <a href="https://www.linkedin.com/in/eugenia-b-115166223/" target="_blank"
+                            >Eugenia Brunetti Ehnimb</a
+                          >
+                          and is
+                          <a
+                            href="https://github.com/eugesuri/clothing-brand-trendy"
+                            target="_blank"
+                          >
+                            on GitHub</a
+                          >
+                          and
+                          <a href="https://friends-best-tv.netlify.app/" target="_blank"
+                            >hosted on Netlify</a
+                          >
+                        </p>
+                      </footer>
+                  
         </body>
         <script>
             const container = document.querySelector('.container');
